@@ -7,7 +7,7 @@
 
 Vagrant(>= 2.2.2)
 
-## usage
+## Usage
 
 ```sh
 git clone https://github.com/hotaru51/docker-vm.git
