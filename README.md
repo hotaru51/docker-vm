@@ -12,6 +12,7 @@ Vagrant(>= 2.2.2)
 ```sh
 git clone https://github.com/hotaru51/docker-vm.git
 cd docker-vm
+mkdir docker
 vagrant up
 vagrant ssh
 ```

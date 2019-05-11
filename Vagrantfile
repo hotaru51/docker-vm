@@ -9,6 +9,7 @@ Vagrant.configure("2") do |config|
     # vb.memory = "2048"
     # vb.cpus = "2"
   end
-  config.vm.network "private_network", type: "dhcp"
+  config.vm.network "private_network", ip: "192.168.1.1"
+  config.vm.synced_folder "docker/", "/home/vagrant/docker"
   config.vm.provision "shell", path: "provisioning.sh"
 end
