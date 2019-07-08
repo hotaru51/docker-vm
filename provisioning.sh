@@ -4,19 +4,7 @@
 apt update
 apt install -y \
   git \
-  apt-transport-https \
-  ca-certificates \
-  curl \
-  software-properties-common
-
-# Dockerリポジトリ追加
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
-add-apt-repository -y \
-  "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-
-# Dockerインストール
-apt update
-apt install -y docker-ce
+  curl
 
 # vagrantユーザをdockerグループに追加
 usermod -aG docker vagrant
